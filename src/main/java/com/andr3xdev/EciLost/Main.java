@@ -5,7 +5,7 @@ import Items_type.Item;
 public class Main {
     public static void main(String[] args) {
 
-        String name = "amando mas";
+        String name = "asdsadss";
         String description = "arroz";
 
         Item a = new Item(name, description);
