@@ -12,7 +12,7 @@
 	<artifactId>EciLost</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>EciLost</name>
-	<description>Lost items gestor</description>
+	<description>Lost items restore</description>
 	<url/>
 	<licenses>
 		<license/>
