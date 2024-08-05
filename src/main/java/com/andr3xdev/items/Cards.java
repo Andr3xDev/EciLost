@@ -1,10 +1,10 @@
-package Items_type;
+package com.andr3xdev.items;
 //extends Item
 public class Cards {
     // * Attributes of the class
-    String type;
-    String owner;
-    String company;
+    private String type;
+    private String owner;
+    private String company;
 
     // * Constructor
     public Cards(String type, String owner, String company) {
