@@ -1,11 +1,13 @@
-package Items_type;
+package com.andr3xdev.items;
 
-public class Clothes {
+public class Sports {
+
     // * Attributes of the class
+
     private String type;
+    private String brand;
     private String size;
     private String color;
-    private String brand;
 
     // * Constructor
 
@@ -16,5 +18,4 @@ public class Clothes {
     // Getters
 
     // setters
-
 }

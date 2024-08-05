@@ -1,4 +1,4 @@
-package Items_type;
+package com.andr3xdev.items;
 
 public class Tecnology {
     // * Attributes of the class
