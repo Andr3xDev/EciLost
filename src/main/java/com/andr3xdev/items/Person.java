@@ -6,7 +6,8 @@ import java.time.LocalTime;
 
 // Entity class for User
 @Entity
-@Table(name = "user")
+@Table(name = "users")
+
 public class Person {
     //* Attributes
     @Id
@@ -35,13 +36,6 @@ public class Person {
 
     //* Methods
 
-    public void updateUser(Person personN) {
-
-        if (personN != null) {
-            this.username = Person.setUsername(personN);
-        }
-    }
-
     public void updateStatus(String status) {
         this.status = status;
     }
@@ -62,11 +56,7 @@ public class Person {
     //* Setters and Getters
     // Setters
 
-    public static void setUsername(String username) {
-        if (username == null || username.isEmpty()) {
-            username = this.username;
-            throw new IllegalArgumentException("Username cannot be empty");
-        }
+    public void setUsername(String username) {
         this.username = username;
     }
 
