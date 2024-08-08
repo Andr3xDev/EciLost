@@ -1,4 +1,4 @@
-package com.andr3xdev.items;
+package com.andr3xdev.models;
 
 // Imports
 import jakarta.persistence.*;
@@ -8,7 +8,7 @@ import java.time.LocalTime;
 @Entity
 @Table(name = "users")
 
-public class Person {
+public class User_model {
     //* Attributes
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
@@ -22,7 +22,7 @@ public class Person {
 
     //* Constructors
 
-    public Person(String username, String name, String email, String password) {
+    public User_model(String username, String name, String email, String password) {
         this.username = username;
         this.name = name;
         this.email = email;
@@ -31,7 +31,7 @@ public class Person {
         this.password = password;
     }
 
-    public Person() {
+    public User_model() {
     }
 
     //* Methods
