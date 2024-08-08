@@ -8,7 +8,7 @@ import java.time.LocalTime;
 @Entity
 @Table(name = "users")
 
-public class User_model {
+public class UserModel {
     //* Attributes
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
@@ -22,7 +22,7 @@ public class User_model {
 
     //* Constructors
 
-    public User_model(String username, String name, String email, String password) {
+    public UserModel(String username, String name, String email, String password) {
         this.username = username;
         this.name = name;
         this.email = email;
@@ -31,7 +31,7 @@ public class User_model {
         this.password = password;
     }
 
-    public User_model() {
+    public UserModel() {
     }
 
     //* Methods

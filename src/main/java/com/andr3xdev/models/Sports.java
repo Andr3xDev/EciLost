@@ -1,4 +1,4 @@
-package com.andr3xdev.items;
+package com.andr3xdev.models;
 
 public class Sports {
 

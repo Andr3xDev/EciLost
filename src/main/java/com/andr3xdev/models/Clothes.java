@@ -1,15 +1,11 @@
-package com.andr3xdev.items;
+package com.andr3xdev.models;
 
-public class Clothes extends Item {
+public class Clothes {
     // * Attributes of the class
     private String type;
     private String size;
     private String color;
     private String brand;
-
-    public Clothes( String description, Integer publisher) {
-        super(name, description, publisher);
-    }
 
     // * Constructor
 

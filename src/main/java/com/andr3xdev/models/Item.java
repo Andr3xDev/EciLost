@@ -1,4 +1,4 @@
-package com.andr3xdev.items;
+package com.andr3xdev.models;
 
 // * Imports
 import jakarta.persistence.*;
@@ -8,11 +8,11 @@ import java.time.LocalDate;
 // * Class
 
 @Entity
-@Table(name = "item")
+@Table(name = "items")
 public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     private String name;
     private LocalDate date;
     private String description;
@@ -36,6 +36,10 @@ public class Item {
         this.publisher = publisher;
     }
 
+    public Item() {
+
+    }
+
 
     // * Methods
     // main methods
@@ -53,10 +57,6 @@ public class Item {
     }
 
     // Setters
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public void setName(String name) {
         this.name = name;
@@ -92,10 +92,6 @@ public class Item {
 
 
     // Getters
-
-    public Integer getId() {
-        return id;
-    }
 
     public String getName() {
         return name;

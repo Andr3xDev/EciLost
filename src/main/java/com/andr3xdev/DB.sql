@@ -1,6 +1,6 @@
 -- Tables
 CREATE TABLE users (
-    id SERIAL PRIMARY KEY,
+    id BIGSERIAL PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
     name VARCHAR(40) NOT NULL,
     password VARCHAR(50) NOT NULL,
@@ -9,14 +9,14 @@ CREATE TABLE users (
 );
 
 CREATE TABLE itemsXusers (
-    id SERIAL PRIMARY KEY,
+    id BIGSERIAL PRIMARY KEY,
     user_id INT NOT NULL,
     item_id INT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE items (
-    id SERIAL PRIMARY KEY,
+    id BIGSERIAL PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     description VARCHAR(50) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -28,7 +28,7 @@ CREATE TABLE items (
 );
 
 CREATE TABLE sports (
-    item_id INT PRIMARY KEY,
+    item_id BIGSERIAL PRIMARY KEY,
     type VARCHAR(50) not null ,
     brand VARCHAR(50),
     size VARCHAR(50),
@@ -36,7 +36,7 @@ CREATE TABLE sports (
 );
 
 CREATE TABLE clothes (
-    item_id INT PRIMARY KEY,
+    item_id BIGSERIAL PRIMARY KEY,
     type VARCHAR(50) not null ,
     brand VARCHAR(50),
     size VARCHAR(50),
@@ -44,14 +44,14 @@ CREATE TABLE clothes (
 );
 
 CREATE TABLE cards (
-    item_id INT PRIMARY KEY,
+    item_id BIGSERIAL PRIMARY KEY,
     type VARCHAR(50) not null ,
     owner VARCHAR(50),
     company VARCHAR(50)
 );
 
 CREATE TABLE technologys (
-    item_id INT PRIMARY KEY,
+    item_id BIGSERIAL PRIMARY KEY,
     type VARCHAR(50) not null ,
     brand VARCHAR(50),
     model VARCHAR(50)

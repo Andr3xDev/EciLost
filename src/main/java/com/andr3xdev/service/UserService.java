@@ -9,12 +9,16 @@ import java.util.ArrayList;
 
 
 @Service
-public class IUserService {
+public class UserService {
 
     @Autowired
     IUserRepository userRepository;
 
     public ArrayList<UserModel> getUsers() {
         return (ArrayList<UserModel>) userRepository.findAll();
+    }
+
+    public UserModel save(UserModel user) {
+        return userRepository.save(user);
     }
 }
